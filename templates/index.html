@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    <!-- Red Gradient Sun Background -->
+    <div class="sun-background"></div>
+<!--d-->
+    <!-- Cherry Blossom Petals Container -->
+    <div id="petals-container"></div>
+
+    <!-- Background Elements -->
+    <div class="cherry-blossom-bg"></div>
+
+    <!-- Intro Screen -->
+    <div id="introScreen" class="intro-screen">
+        <!-- Watercolor background -->
+        <div class="watercolor-bg"></div>
+        
+        <!-- Ink spread animation -->
+        <div class="ink-spread"></div>
+        
+        <!-- Floating circles -->
+        <div id="floatingCircles"></div>
+        
+        <div class="intro-content">
+            <h1 class="intro-title">Moodify</h1>
+            <p class="intro-subtitle">Your magical adventure begins here</p>
+            <div class="intro-line"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainPage" class="main-container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <a href="#" class="logo">Moodify</a>
+            <div class="nav-links">
+                <a href="#" id="aboutLink" class="nav-link">About</a>
+            </div>
+        </nav>
+
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h2 class="welcome-heading">Hello and Welcome!</h2>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Cat Container -->
+            <div id="catContainer" class="cat-container">
+                <div class="cat-mascot">
+                    <img 
+                        src="static/cat_mascot.jpg"
+                        alt="Cute Cat Mascot"
+                        class="cat-image"
+                    />
+                    
+                    <!-- Speech Bubble -->
+                    <div id="speechBubble" class="speech-bubble">
+                        <span class="speech-text">Hi! 👋</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Title -->
+            <h1 class="game-title">Moodify</h1>
+            
+            <!-- Start Button -->
+            <button id="startButton" class="start-button">
+                <span>▶ Start Adventure</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="quiz-page">
+        <div class="quiz-header">
+            <h1 class="quiz-title">Mood Quest</h1>
+            <div class="quiz-progress">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div id="quizQuestionContainer" class="quiz-question-page">
+            <h2 id="quizQuestionText" class="quiz-question-text"></h2>
+            <div id="quizOptionsContainer" class="quiz-options-grid"></div>
+            <div class="quiz-navigation">
+                <button id="prevQuestionBtn" class="quiz-nav-btn" disabled>← Previous</button>
+                <button id="nextQuestionBtn" class="quiz-nav-btn">Next →</button>
+            </div>
+        </div>
+
+        <div id="quizResultPage" class="quiz-result-page">
+            <h2 class="result-title">Your Selections</h2>
+            <div id="selectedOptions" class="selected-options"></div>
+            <div class="action-buttons">
+                <button id="analyzeBtn" class="action-btn analyze-btn">Analyze My Mood</button>
+                <button id="homeBtn" class="action-btn home-btn">Go Back Home</button>
+            </div>
+        </div>
+
+        <div id="moodResult" class="mood-result">
+            <h2 class="mood-title">Your Mood Analysis</h2>
+            <div id="moodAnalysisText" class="selected-options"></div>
+            <div id="songRecommendations" class="song-recommendations"></div>
+            <div class="action-buttons">
+                <button id="backToResultsBtn" class="action-btn home-btn">Back to Results</button>
+                <button id="newQuizBtn" class="action-btn analyze-btn">Start New Quiz</button>
+                <button id="moodHomeBtn" class="action-btn home-btn">Go Back Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="aboutPage" class="about-page">
+        <div class="about-content">
+            <h1 class="about-title">Discover music that truly resonates with you</h1>
+            
+            <div class="about-section">
+                <p class="about-text">
+                    Moodify is an intelligent mood analysis quiz that recommends songs based on how you're feeling. Whether you're joyful, reflective, energized, or mellow, our system blends emotional insights with music curation to deliver a personalized listening experience.
+                </p>
+            </div>
+            
+            <div class="about-section">
+                <h2 class="about-section-title">🔍 How it works</h2>
+                <p class="about-text">
+                    Take a quick quiz that gauges your emotional state through colors, metaphors, and scenarios.
+                </p>
+                <p class="about-text">
+                    Our algorithm interprets your responses to map your mood.
+                </p>
+                <p class="about-text">
+                    We generate a tailored playlist just for you — music that matches your vibe.
+                </p>
+            </div>
+            
+            <div class="about-section">
+                <h2 class="about-section-title">🎧 Powered by Emotion + AI</h2>
+                <p class="about-text">
+                    We combine emotion-based logic and machine learning to match songs that go beyond genres — focusing on how they feel.
+                </p>
+                <p class="about-text">
+                    Let music understand you.
+                </p>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="aboutHomeBtn" class="action-btn home-btn">Go Back Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
